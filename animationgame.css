@@ -1,0 +1,794 @@
+@charset "utf-8";
+/* Animation Testing */
+
+body {
+	background-image:url(../images/main-background.jpg);
+}
+
+#point {
+	z-index:100;
+	width:88px;
+	height:31px;
+	position:absolute;
+	left:120px;
+	top: 457px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:24px;
+	font-weight:bolder;
+	color:#9d5806;
+}
+
+#scoreboard {
+	z-index:100;
+	background-image:url(images/scoreboard.png);
+	background-repeat: no-repeat;
+	width:223px;
+	height:69px;
+	position:absolute;
+	top:430px;
+	left:10px;
+}
+#stage {
+	margin:auto;
+	width:950px;
+	max-width:950px;
+	min-width:950px;
+	height:500px;
+	min-height:500px;
+	max-height:500px;
+	padding: 1.5%;
+	position:relative;
+	overflow:hidden;
+}
+
+
+
+
+
+#speaker {
+	background:url(images/speaker2.gif);
+	background-repeat:no-repeat;
+	width:216px;
+	height:163px;
+	position:absolute;
+	top:45px;
+	left:49px;
+	z-index:100;
+	transform: scale(0.4,0.4);
+	-webkit-transform: scale(0.4,0.4);
+	-moz-transform: scale(0.4,0.4);
+	-o-transform: scale(0.4,0.4);}
+
+
+#sky {
+	margin:auto;
+	width:9900px;
+	height:500px;
+	padding: 1.5%;
+	background-image: url(images/sky.png);
+	background-position: 0% 0%;
+	background-repeat:repeat-x;
+	position:absolute;
+	top: 0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index: 1;
+}
+
+
+
+
+#ground {
+	margin:auto;
+	width:9900px;
+	height:500px;
+	padding: 1.5%;
+	background-image: url(images/ground.png);
+	background-position: 0% 0%;
+	background-repeat:repeat-x;
+	position:absolute;
+	top: 0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index: 1;
+}
+
+
+
+
+
+
+#castle {
+	margin:auto;
+	width:1000px;
+	height:500px;
+	padding: 1.5%;
+	background-image:url(images/castle.png);
+	background-repeat: no-repeat;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left: -1000px;
+	z-index:20;
+	animation:castle 30s linear infinite;
+	-webkit-animation:castle 30s linear infinite;
+	-moz-animation:castle 30s linear infinite;
+	-o-animation:castle 30s linear infinite;
+
+}
+
+@keyframes castle{
+	from {left:-1000px;}
+	to {left:1000px;}
+}
+@-webkit-keyframes castle{
+	from {left:-1000px;}
+	to {left:1000px;}
+}
+@-moz-keyframes castle{
+	from {left:-1000px;}
+	to {left:1000px;}
+}
+@-o-keyframes castle{
+	from {left:-1000px;}
+	to {left:1000px;}
+}
+
+
+
+
+
+
+#backtrees {
+	margin:auto;
+	padding: 1.5%;
+	width:9900px;
+	height:500px;
+	background-image:url(images/backtree.png);
+	background-repeat: repeat-x;
+	position:absolute;
+	top: 0;
+	right:0;
+	bottom:0px;
+	left:-8950px;
+	z-index:24;
+	animation:trees 300s linear infinite;
+	-webkit-animation:trees 300s linear infinite;
+	-moz-animation:trees 300s linear infinite;
+	-o-animation:trees 300s linear infinite;
+
+}
+
+
+
+
+#midtrees {
+	margin:auto;
+	padding: 1.5%;
+	width:9900px;
+	height:500px;
+	background-image:url(images/midtree.png);
+	background-repeat: repeat-x;
+	position:absolute;
+	top: 0;
+	right:0;
+	bottom:0px;
+	left:-8950px;
+	z-index:31;
+	animation:trees 300s linear infinite;
+	-webkit-animation:trees 300s linear infinite;
+	-moz-animation:trees 300s linear infinite;
+	-o-animation:trees 300s linear infinite;
+
+}
+
+
+
+
+#fronttrees {
+	margin:auto;
+	width:9900px;
+	height:500px;
+	padding: 1.5%;
+	background-image:url(images/fronttree.png);
+	background-repeat: repeat-x;
+	position:absolute;
+	top: 0px;
+	right:0;
+	bottom:0;
+	left:-8950px;
+	z-index:49;
+	animation:trees 300s linear infinite;
+	-webkit-animation:trees 300s linear infinite;
+	-moz-animation:trees 300s linear infinite;
+	-o-animation:trees 300s linear infinite;
+
+}
+
+@keyframes trees{
+	from {left:-8950px;}
+	to {left:0px;}
+}
+@-webkit-keyframes trees{
+	from {left:-8950px;}
+	to {left:0px;}
+}
+@-moz-keyframes trees{
+	from {left:-8950px;}
+	to {left:0px;}
+}
+@-o-keyframes trees{
+	from {left:-8950px;}
+	to {left:0px;}
+}
+
+
+
+
+
+
+
+
+#bushes {
+	margin:auto;
+	width:9900px;
+	height:500px;
+	padding: 1.5%;
+	background-image:url(images/bushes.png);
+	background-repeat: repeat-x;
+	position: absolute;
+	top: 0;
+	right:0;
+	bottom:0px;
+	left:-8950px;
+	z-index:70;
+	animation:bushes 50s linear infinite ;
+	-webkit-animation:bushes 150s linear infinite ;
+	-moz-animation:bushes 150s linear infinite;
+	-o-animation:bushes 150s linear infinite;
+
+}
+
+
+@keyframes bushes {
+	from {left:-8950px;}
+	to {left:0px;}
+}
+
+@-webkit-keyframes bushes {
+	from {left:-8950px;}
+	to {left:0px;}
+}
+@-moz-keyframes bushes {
+	from {left:-8950px;}
+	to {left:0px;}
+}
+@-o-keyframes bushes {
+	from {left:-8950px;}
+	to {left:0px;}
+}
+
+
+
+
+
+
+div#backcloud {
+	margin:auto;
+	width:9900px;
+	height:500px;
+	padding: 1.5%;
+	background-image:url(images/backcloud.png);
+	background-repeat:repeat-x;
+	position:absolute;
+	top: 0px;
+	left:0px;
+	right:0;
+	bottom:0;
+	z-index:10;
+	animation: cloud 300s linear infinite;
+	-webkit-animation: cloud 300s linear infinite;
+	-moz-animation: cloud 300s linear infinite;
+	-o-animation: cloud 300s linear infinite;
+
+}
+
+div#midcloud {
+	margin:auto;
+	width:9900px;
+	height:500px;
+	padding: 1.5%;
+	background-image:url(images/midcloud.png);
+	background-repeat:repeat-x;
+	position: absolute;
+	top: 0px;
+	left:-1600px;
+	right:0;
+	bottom:0;
+	z-index:15;
+	animation: cloud 300s linear infinite;
+	-webkit-animation: cloud 300s linear infinite;
+	-moz-animation: cloud 300s linear infinite;
+	-o-animation: cloud 300s linear infinite;
+}
+
+div#frontcloud {
+	margin:auto;
+	width:9900px;
+	height:500px;
+	padding: 1.5%;
+	background-image:url(images/frontcloud.png);
+	background-repeat: repeat-x;
+	position:absolute;
+	top:0px;
+	left:-1600px;
+	right:0;
+	bottom:0;
+	z-index:25;
+	animation: cloud 300s linear infinite;
+	-webkit-animation: cloud 300s linear infinite;
+	-moz-animation: cloud 300s linear infinite;
+	-o-animation: cloud 300s linear infinite;
+
+}
+@keyframes cloud {
+	from {left:-1600px;}
+	to {left:1600px;}
+}
+
+@-webkit-keyframes cloud {
+	from {left:-1600px;}
+	to {left:1600px;}
+}
+@-moz-keyframes cloud {
+	from {left:-1600px;}
+	to {left:1600px;}
+}
+@-o-keyframes cloud {
+	from {left:-1600px;}
+	to {left:1600px;}
+}
+
+
+
+
+#bigbats {
+	margin:auto;
+	width:5600px;
+	height:500px;
+	position:absolute;
+	top:0px;
+	left:700px;
+	right:0;
+	bottom:0;
+	z-index:100;
+	animation: flybats 10s linear infinite;
+	-webkit-animation: flybats 10s linear infinite;
+	-moz-animation: flybats 10s linear infinite;
+	-o-animation: flybats 10s linear infinite;
+	}
+
+
+
+#smallbats {
+	margin:auto;
+	width:5600px;
+	height:500px;
+	position:absolute;
+	top:0px;
+	left:700px;
+	right:0;
+	bottom:0;
+	z-index:100;
+	animation: flybats 7s linear infinite;
+	-webkit-animation: flybats 7s linear infinite;
+	-moz-animation: flybats 7s linear infinite;
+	-o-animation: flybats 7s linear infinite;
+	}
+
+
+@keyframes flybats {
+	0% {left:1000px;}
+   100% {left:-800px;}
+}
+
+@-webkit-keyframes flybats {
+	0% {left:1000px;}
+   100% {left:-800px;}
+}
+@-moz-keyframes flybats {
+	0% {left:1000px;}
+   100% {left:-800px;}
+}
+@-o-keyframes flybats {
+	0% {left:1000px;}
+   100% {left:-800px;}
+}
+
+
+
+
+#bat1 {
+	background-image:url(images/bat1.gif); 
+	width: 169px; 
+	height: 154px; 
+	position:absolute; 
+	top:0px; 
+	left:500px; 
+}
+
+#bat2{
+	background-image:url(images/bat2.gif);
+	width: 169px;
+	height: 154px;
+	position:absolute;
+	top:57px;
+	left:-35px;
+	transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	-moz-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+}
+
+#bat3{
+	background-image:url(images/bat3.gif);
+	width: 169px;
+	height: 154px;
+	position:absolute;
+	top:221px;
+	left:334px;
+}
+
+#bat4 {
+	background-image:url(images/bat1.gif);
+	width: 169px;
+	height: 154px;
+	position:absolute;
+	top:213px;
+	left:122px;
+	transform: scale(0.8,0.8);
+	-webkit-transform: scale(0.8,0.8);
+	-moz-transform: scale(0.8,0.8);
+	-o-transform: scale(0.8,0.8);
+}
+
+#bat5{
+	background-image:url(images/bat2.gif);
+	width: 169px;
+	height: 154px;
+	position:absolute;
+	top:60px;
+	left:185px;
+	transform: scale(0.6,0.6);
+	-webkit-transform: scale(0.6,0.6);
+	-moz-transform: scale(0.6,0.6);
+	-o-transform: scale(0.6,0.6);
+
+}
+
+#bat6{
+	background-image:url(images/bat3.gif);
+	width: 169px;
+	height: 154px;
+	position:absolute;
+	top:79px;
+	left:672px;
+	transform: scale(0.55,0.55);
+	-webkit-transform: scale(0.55,0.55);
+	-moz-transform: scale(0.55,0.55);
+	-o-transform: scale(0.55,0.55);
+
+}
+
+#bat7{
+	background-image:url(images/bat3.gif);
+	width: 169px;
+	height: 154px;
+	position:absolute;
+	top:161px;
+	left:502px;
+	transform: scale(0.6,0.6);
+	-webkit-transform: scale(0.6,0.6);
+	-moz-transform: scale(0.6,0.6);
+	-o-transform: scale(0.6,0.6);
+}
+
+
+
+
+
+#devil {
+	margin:auto;
+	width:5600px;
+	height:500px;
+	background-image:;
+	background-repeat: no-repeat;
+	position:absolute;
+	top: 10px;
+	right:0;
+	bottom:0;
+	left:-135px;
+	z-index:100;
+	animation: devil 3s linear infinite;
+	-webkit-animation: devil 3s linear infinite;
+	-moz-animation: devil 3s linear alternate infinite;
+	-o-animation: devil 3s linear alternate infinite;
+}
+
+@keyframes devil{
+	0% {left:-135px;}
+	100%{left: 960px;}
+}
+@-webkit-keyframes devil{
+	0% {left:-135px;}
+	100%{left: 960px;}
+}
+
+
+#shoot{
+	width:950px;
+	height:500px;
+	z-index:100;
+	background-image:;
+	background-repeat:no-repeat;
+	background-position: 50% 0%;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+
+
+#theEnd {
+	width:950px;
+	height:500px;
+	background-image:;
+	background-repeat:no-repeat;
+	background-position: 50% 50%;
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-repeat-no-repeat;
+	z-index:100;
+}
+
+
+
+#rukia {
+	margin:auto;
+	width:950px;
+	height:500px;
+	padding: 1.5%;
+	background-image:;
+	background-repeat: no-repeat;
+	background-position: -35% 0%;
+	position:absolute;
+	top: 0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:4;
+	animation: rukia 10s linear 1;
+	-webkit-animation: rukia 10s linear 1;
+	-moz-animation: rukia 10s linear 1;
+	-o-animation: rukia 10s linear 1;
+
+}
+
+@keyframes rukia {
+	0% {background-image:; background-position: -35% 0%; z-index:4;}
+	60% {background-image:url(images/rukia-chibi.png); background-position: 0% 20%; z-index:19;}
+	75% {background-image:url(images/rukia-chibi.png); background-position: 40% 40%; z-index:52;}
+	100% {background-image:url(images/rukia-chibi.png); background-position: 100% 60%; z-index:52;}
+}
+
+@-webkit-keyframes rukia {
+	0% {background-image:; background-position: -35% 0%; z-index:4;}
+	60% {background-image:url(images/rukia-chibi.png); background-position: 0% 20%; z-index:19;}
+	75% {background-image:url(images/rukia-chibi.png); background-position: 40% 40%; z-index:52;}
+	100% {background-image:url(images/rukia-chibi.png); background-position: 100% 60%; z-index:52;}
+}
+@-moz-keyframes rukia {
+	0% {background-image:; background-position: -35% 0%; z-index:4;}
+	60% {background-image:url(images/rukia-chibi.png); background-position: 0% 20%; z-index:19;}
+	75% {background-image:url(images/rukia-chibi.png); background-position: 40% 40%; z-index:52;}
+	100% {background-image:url(images/rukia-chibi.png); background-position: 100% 60%; z-index:52;}
+}
+@-o-keyframes rukia {
+	0% {background-image:; background-position: -35% 0%; z-index:4;}
+	60% {background-image:url(images/rukia-chibi.png); background-position: 0% 20%; z-index:19;}
+	75% {background-image:url(images/rukia-chibi.png); background-position: 40% 40%; z-index:52;}
+	100% {background-image:url(images/rukia-chibi.png); background-position: 100% 60%; z-index:52;}
+}
+
+
+
+
+
+#rukiashadow {
+	margin:auto;
+	width:850px;
+	max-width:850px;
+	min-width:850px;
+	height:475px;
+	min-height:475px;
+	max-height:475px;
+	padding:1.5%;
+	background-image:url(images/rukiashadow.png);
+	background-repeat: no-repeat;
+	background-position: -45% 80%;
+	position:absolute;
+	overflow:hidden;
+	top: 0;
+	right:0;
+	bottom:0;
+	left:0px;
+	z-index:71;
+	transform: scale(1,1);
+	-webkit-transform: scale(1,1);
+	animation: rukiashadow 11s linear 1;
+	-webkit-animation: rukiashadow 10s linear 1;
+	-moz-animation: rukiashadow 10s linear 1;
+	-o-animation: rukiashadow 10s linear 1;
+
+}
+
+@keyframes rukiashadow {
+	0% {background-image:url(images/rukiashadow.png); background-position: -45% 80%; transform: scale(1,1); -webkit-transform: scale(1,1);}
+	60% {background-image:url(images/rukiashadow.png); background-position: -5% 80%; transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);}
+	75% {background-image:url(images/rukiashadow.png); background-position: 40% 80%; transform: scale(1.3,1.3); -webkit-transform: scale(1.3,1.3);}
+	100% {background-image:url(images/rukiashadow.png); background-position: 85% 80%; transform: scale(1.5,1.5);  -webkit-transform: scale(1.5,1.5);}
+}
+
+@-webkit-keyframes rukiashadow {
+	0% {background-image:url(images/rukiashadow.png); background-position: -45% 80%; transform: scale(1,1); -webkit-transform: scale(1,1);}
+	50% {background-image:url(images/rukiashadow.png); background-position: -5% 80%; transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);}
+	75% {background-image:url(images/rukiashadow.png); background-position: 40% 80%; transform: scale(1.3,1.3); -webkit-transform: scale(1.3,1.3);}
+	100% {background-image:url(images/rukiashadow.png); background-position: 85% 80%; transform: scale(1.5,1.5);  -webkit-transform: scale(1.5,1.5);}
+}
+@-moz-keyframes rukiashadow {
+	0% {background-image:url(images/rukiashadow.png); background-position: -45% 80%; transform: scale(1,1); -webkit-transform: scale(1,1);}
+	50% {background-image:url(images/rukiashadow.png); background-position: -5% 80%; transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);}
+	75% {background-image:url(images/rukiashadow.png); background-position: 40% 80%; transform: scale(1.3,1.3); -webkit-transform: scale(1.3,1.3);}
+	100% {background-image:url(images/rukiashadow.png); background-position: 85% 80%; transform: scale(1.5,1.5);  -webkit-transform: scale(1.5,1.5);}
+}
+@-o-keyframes rukiashadow {
+	0% {background-image:url(images/rukiashadow.png); background-position: -45% 80%; transform: scale(1,1); -webkit-transform: scale(1,1);}
+	50% {background-image:url(images/rukiashadow.png); background-position: -5% 80%; transform: scale(1.1,1.1); -webkit-transform: scale(1.1,1.1);}
+	75% {background-image:url(images/rukiashadow.png); background-position: 40% 80%; transform: scale(1.3,1.3); -webkit-transform: scale(1.3,1.3);}
+	100% {background-image:url(images/rukiashadow.png); background-position: 85% 80%; transform: scale(1.5,1.5);  -webkit-transform: scale(1.5,1.5);}
+}
+
+
+
+
+
+#ichigo {
+	margin:auto;
+	width:950px;
+	max-width:950px;
+	min-width:950px;
+	height:500px;
+	min-height:500px;
+	max-height:500px;
+	padding: 1.5%;
+	background-image:url(images/Ichigo-chibi.png);
+	background-repeat:no-repeat;
+	background-position: 140% 80%;
+	position:absolute;
+	top: 0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:50;
+	animation: ichigo 10s linear 1;
+	-webkit-animation: ichigo 10s linear 1;
+	-moz-animation: ichigo 10s linear 1;
+	-o-animation: ichigo 10s linear 1;
+
+}
+
+@keyframes ichigo {
+	0% {background-image:url(images/Ichigo-chibi.png); background-position: 140% 80%;}
+	25% {background-image:url(images/Ichigo-chibi.png); background-position: 70% 80%;}
+	49% {background-image:url(images/Ichigo-chibi.png); background-position: 10% 80%;}
+	50% {background-image:url(images/Ichigo-chibi2.png); background-position: 10% 80%;}
+	75% {background-image:url(images/Ichigo-chibi2.png); background-position: 55% 80%;}
+    100% {background-image:url(images/Ichigo-chibi2.png); background-position: 130% 80%;}
+}
+
+@-webkit-keyframes ichigo {
+	0% {background-image:url(images/Ichigo-chibi.png); background-position: 140% 50%;}
+	25% {background-image:url(images/Ichigo-chibi.png); background-position: 70% 50%;}
+	49% {background-image:url(images/Ichigo-chibi.png); background-position: 10% 50%;}
+	50% {background-image:url(images/Ichigo-chibi2.png); background-position: 10% 50%;}
+	75% {background-image:url(images/Ichigo-chibi2.png); background-position: 55% 50%;}
+    100% {background-image:url(images/Ichigo-chibi2.png); background-position: 130% 50%;}
+}
+@-moz-keyframes ichigo {
+	0% {background-image:url(images/Ichigo-chibi.png); background-position: 140% 50%;}
+	25% {background-image:url(images/Ichigo-chibi.png); background-position: 70% 50%;}
+	49% {background-image:url(images/Ichigo-chibi.png); background-position: 10% 50%;}
+	50% {background-image:url(images/Ichigo-chibi2.png); background-position: 10% 50%;}
+	75% {background-image:url(images/Ichigo-chibi2.png); background-position: 55% 50%;}
+    100% {background-image:url(images/Ichigo-chibi2.png); background-position: 130% 50%;}
+}
+@-o-keyframes ichigo {
+	0% {background-image:url(images/Ichigo-chibi.png); background-position: 140% 50%;}
+	25% {background-image:url(images/Ichigo-chibi.png); background-position: 70% 50%;}
+	49% {background-image:url(images/Ichigo-chibi.png); background-position: 10% 50%;}
+	50% {background-image:url(images/Ichigo-chibi2.png); background-position: 10% 50%;}
+	75% {background-image:url(images/Ichigo-chibi2.png); background-position: 55% 50%;}
+    100% {background-image:url(images/Ichigo-chibi2.png); background-position: 130% 50%;}
+}
+
+
+#story {
+	margin:auto;
+	width: 580px;
+	height: 500px;
+	background-image:none;
+	background-repeat:no-repeat;
+	background-postion:50% 0%;
+	position:absolute;
+	top: 0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:0;
+	animation: story 18s linear 1 ;
+	-webkit-animation: story 18s linear 1;
+	-moz-animation: story 18s linear 1;
+	-o-animation:  story 18s linear 1;
+}
+@keyframes story {
+	0% {background-image:url(images/story/1.png); z-index:100;}
+	22% {background-image:url(images/story/2.png); z-index:100;}
+	44% {background-image:url(images/story/3.png); z-index:100;}
+	56% {background-image:url(images/story/4.png); z-index:100;}
+	67% {background-image:url(images/story/5.png); z-index:100;}
+	78% {background-image:url(images/story/6.png); z-index:100;}
+	89% {background-image:url(images/story/7.png); z-index:100;}
+	95% {background-image:url(images/story/8.png); z-index:100;}
+	100% {background-image:url(images/story/8.png); z-index:100;}
+}
+
+@-webkit-keyframes story {
+	0% {background-image:url(images/story/1.png); z-index:100;}
+	22% {background-image:url(images/story/2.png); z-index:100;}
+	44% {background-image:url(images/story/3.png); z-index:100;}
+	56% {background-image:url(images/story/4.png); z-index:100;}
+	67% {background-image:url(images/story/5.png); z-index:100;}
+	78% {background-image:url(images/story/6.png); z-index:100;}
+	89% {background-image:url(images/story/7.png); z-index:100;}
+	95% {background-image:url(images/story/8.png); z-index:100;}
+	100% {background-image:url(images/story/8.png); z-index:100;}
+}
+@-moz-keyframes story {
+	0% {background-image:url(images/story/1.png); z-index:100;}
+	22% {background-image:url(images/story/2.png); z-index:100;}
+	33% {background-image:url(images/story/3.png); z-index:100;}
+	44% {background-image:url(images/story/4.png); z-index:100;}
+	56% {background-image:url(images/story/5.png); z-index:100;}
+	67% {background-image:url(images/story/6.png); z-index:100;}
+	78% {background-image:url(images/story/7.png); z-index:100;}
+	89% {background-image:url(images/story/8.png); z-index:100;}
+	100% {background-image:url(images/story/8.png); z-index:100;}
+}
+@-o-keyframes story {
+	0% {background-image:url(images/story/1.png); z-index:100;}
+	22% {background-image:url(images/story/2.png); z-index:100;}
+	33% {background-image:url(images/story/3.png); z-index:100;}
+	44% {background-image:url(images/story/4.png); z-index:100;}
+	56% {background-image:url(images/story/5.png); z-index:100;}
+	67% {background-image:url(images/story/6.png); z-index:100;}
+	78% {background-image:url(images/story/7.png); z-index:100;}
+	89% {background-image:url(images/story/8.png); z-index:100;}
+	100% {background-image:url(images/story/8.png); z-index:100;}
+}

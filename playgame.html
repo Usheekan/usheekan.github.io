@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Description" http-equiv="Description" content="Ushee's Vision is the portfolio website of Usheekan Pydegadu UCT student, for Interactive media course, designing online media. This website showcase the assignments I have been doing for the course, and some more things about me." />
+<meta name="keywords" content="portfolio, usheekan, pydegadu, interactive, media, uct student, website, project, assignment, web design, online media, assignments, parallax scrolling, animation, design, CSS, CSS3" />
+<title>Play Game</title>
+<link rel="shortcut icon" href="../images/portfolio-icon-20120830-favicon.ico" type="image/x-icon" />
+<title>CSS Animation</title>
+
+<link href="animationgame.css" rel="stylesheet" type="text/css">
+</head>
+
+
+
+
+<body>
+  
+
+	<div id="stage">
+            
+            <div id="scoreboard"></div>
+          
+            <div id="point"></div>
+ 			
+            <div id="speaker"></div>
+           
+            <div id="story"></div>  
+           	
+            
+            <div id="theEnd"></div>
+           
+	           
+            <div id="shoot"></div>
+			
+            <div id="devil"></div>
+
+
+             <div id="bigbats">   
+             	
+               <div id="bat1"></div>
+               
+               <div id="bat2"></div>
+                 
+           		<div id="bat3"></div>
+               
+      		</div>
+
+			<div id="smallbats">
+            
+                <div id="bat4"></div>
+                
+                <div id="bat5"></div> 
+                 
+               	<div id="bat6"></div>
+                 
+               	<div id="bat7"></div>
+             
+            </div>
+
+          
+<div id="backcloud"></div>
+            
+            <div id="midcloud"></div>
+            
+            <div id="frontcloud"></div>
+         
+            <div id="castle"></div>
+            
+  			<div id="rukia"></div>
+                
+            <div id="rukiashadow"></div>
+                
+            <div id="ichigo"></div>
+        
+           	<div id="backtrees"></div>
+           
+			<div id="midtrees"></div>
+           
+           	<div id="fronttrees"></div>
+         
+<div id="bushes"></div>
+           
+            <div id="ground"></div>
+          	
+            <div id="sky"> </div>
+            
+            <div id="replay"><button style="background-image:none; background-repeat:no-repeat; width:93px; height:45px; padding:0px; position:absolute; top:405px; left:875px; bottom:0; right:0; z-index:100; margin:auto"><a href="playgame.html"><img src="images/replay.png" alt="" width="93" height="45" border="0" /></a></button>
+   
+</div>
+  
+
+
+<script type="text/javascript">
+	
+	var bat1 = document.getElementById("bat1");
+	var bat2 = document.getElementById("bat2");
+	var bat3 = document.getElementById("bat3");
+	var bat4 = document.getElementById("bat4");
+	var bat5 = document.getElementById("bat5");
+	var bat6 = document.getElementById("bat6");
+	var bat7 = document.getElementById("bat7");
+	var stage = document.getElementById("stage");
+	var devil = document.getElementById("devil");
+	var bigbats = document.getElementById("bigbats");
+	var smallbats = document.getElementById("smallbats");
+	var speaker = document.getElementById("speaker");
+	var scoreboard = document.getElementById("scoreboard");
+	var shoot = document.getElementById("shoot");
+	var theEnd = document.getElementById("theEnd");
+	var devilshot = 0;
+	var largeBat = 0;
+	var smallBat = 0;
+	stage.style.cursor = 'none';
+	
+	
+	start();
+	function start(){
+
+
+		bat1.onclick = function(){
+			bat1.style.backgroundImage = "url(images/disintegrate1.gif)";
+			largeBat = largeBat+10
+			addToScore();
+		}
+		bat2.onclick = function(){
+			bat2.style.backgroundImage = "url(images/disintegrate2.gif)";
+			largeBat = largeBat+10
+			addToScore();
+		}
+		bat3.onclick = function(){
+			bat3.style.backgroundImage = "url(images/disintegrate3.gif)";
+			largeBat = largeBat+10
+			addToScore();
+		}
+		bat4.onclick = function(){
+			bat4.style.backgroundImage = "url(images/disintegrate4.gif)";
+			smallBat = smallBat+20
+			addToScore();
+		}
+		bat5.onclick = function(){
+			bat5.style.backgroundImage = "url(images/disintegrate5.gif)";
+			smallBat = smallBat+20
+			addToScore();
+		}
+		bat6.onclick = function(){
+			bat6.style.backgroundImage = "url(images/disintegrate6.gif)";
+			smallBat = smallBat+20
+			addToScore();
+		}
+		bat7.onclick = function(){
+			bat7.style.backgroundImage = "url(images/disintegrate7.gif)";
+			smallBat = smallBat+20
+			addToScore();
+		}
+
+	
+		stage.onmousemove = function(e){
+			speaker.style.top = e.clientY - stage.offsetTop-82+"px";
+			speaker.style.left = e.clientX - stage.offsetLeft-110+"px";
+		}
+			
+				setInterval(callBats,100);
+				function callBats(){
+					if(bigbats.offsetLeft < -700){
+						bat1.style.top = Math.random()*260+"px";
+						bat2.style.top = Math.random()*200+"px";
+						bat3.style.top = Math.random()*300+"px";
+					addToScore();
+						bat1.style.backgroundImage = "url(images/bat1.gif)";
+						bat2.style.backgroundImage = "url(images/bat2.gif)";
+						bat3.style.backgroundImage = "url(images/bat3.gif)";
+						}
+					
+					if(smallbats.offsetLeft< -700){
+						bat4.style.top = Math.random()*260+"px";
+						bat5.style.top = Math.random()*200+"px";
+						bat6.style.top = Math.random()*160+"px";
+						bat7.style.top = Math.random()*300+"px";
+					addToScore();
+						bat4.style.backgroundImage = "url(images/bat1.gif)";
+						bat5.style.backgroundImage = "url(images/bat2.gif)";
+						bat6.style.backgroundImage = "url(images/bat3.gif)";
+						bat7.style.backgroundImage = "url(images/bat3.gif)";
+					}
+				}
+		
+		function addToScore(){
+			var score = largeBat+smallBat+devilshot;
+			point.innerHTML = score;
+				if(score>=160){
+				bat1.style.visibility = "hidden";
+				bat2.style.visibility = "hidden";
+				bat3.style.visibility = "hidden";
+				bat4.style.visibility = "hidden";
+				bat5.style.visibility = "hidden";
+				bat6.style.visibility = "hidden";
+				bat7.style.visibility = "hidden";
+				speaker.style.backgroundImage ="url(images/target.png)";
+				shoot.style.backgroundImage = "url(images/shoot.gif)";
+					
+				devil.style.backgroundImage = "url(images/rukia-chibi.png)";
+					devil.onclick = function(){
+						devilshot = devilshot+30;
+						devil.style.backgroundImage = "url(images/explosion.gif)";
+						addToScore();
+					}
+				devil.style.top = Math.random()*300+"px";
+				
+				if(score>=210){
+					devil.style.visibility = "hidden";
+					theEnd.style.backgroundImage = "url(images/end.jpg)";
+				}
+		}
+
+		}
+		
+	}
+		
+		
+		
+</script>
+
+<noscript>
+This page needs JavaScript. Please enable Javascript!
+</noscript>
+   
+</body>
+</html>
