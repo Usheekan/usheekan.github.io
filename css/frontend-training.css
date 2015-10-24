@@ -6,10 +6,20 @@
 	font-family: AnotherTypeWriter;
 }
 
+@font-face {
+	src: url(../fonts/ROCK.ttf);
+	font-family: Rockwell;
+}
+
+@font-face {
+	src: url(../fonts/Avenir.ttc);
+	font-family: Avenir;
+}
 
 body {
-	background-image: url(../rootImages/background.png);
-	background-color: #000;
+	background-image: url(../images/background.png);
+	font-family: Avenir, Arial;
+	color: #fff;
 }
 
 .frontend-training-wrapper {
@@ -18,19 +28,23 @@ body {
 	margin: 0px auto;
 }
 
+.frontend-training-wrapper h1 {
+	font-size: 24px;
+}
+
 .frontend-training-wrapper .main-title h1 {
 	font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman";
 	font-size: 36px;
 	color: #f30453;
 	text-align: center;
-	padding: 20px;
+	padding: 30px;
 }
 
 .frontend-training-menu-wrapper {
 	width: 800px;
 	text-align: center;
 	
-	margin: auto;
+	margin: 0px auto 20px auto;
 }
 
 .frontend-training-menu-wrapper ul {
@@ -56,4 +70,27 @@ body {
 	text-decoration: none;
 	color: #d5e803;
 	font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman";
+}
+
+.frontend-training-wrapper a {
+	color: #03bbe9;
+	text-decoration: none;
+	-webkit-transition: color 1s;
+	-moz-transition: color 1s;
+}
+
+.frontend-training-wrapper a:hover {
+	color: #d2e9ef;
+}
+
+.content-wrapper {
+	margin-top: 50px;
+}
+
+.content-wrapper .tagStyling {
+	color: #d5e803;
+}
+
+.content-wrapper .interface img {
+	width: 600px;
 }
