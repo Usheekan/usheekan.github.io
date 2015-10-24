@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	src: url(../fonts/atwriter.ttf);
+	font-family: AnotherTypeWriter;
+}
+
+
+body {
+	background-image: url(../rootImages/background.png);
+	background-color: #000;
+}
+
+.frontend-training-wrapper {
+	width: 800px;
+	position: relative;
+	margin: 0px auto;
+}
+
+.frontend-training-wrapper .main-title h1 {
+	font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman";
+	font-size: 36px;
+	color: #f30453;
+	text-align: center;
+	padding: 20px;
+}
+
+.frontend-training-menu-wrapper {
+	width: 800px;
+	text-align: center;
+	
+	margin: auto;
+}
+
+.frontend-training-menu-wrapper ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+.frontend-training-menu-wrapper ul li {
+	list-style: none;
+	display: inline-block;
+	text-align: center;
+	margin: 0px 20px;
+	font-size: 16px;
+	
+	padding: 10px 12px;
+}
+
+.frontend-training-menu-wrapper ul li:hover {
+	content: '&bull;';
+}
+
+.frontend-training-menu-wrapper ul li a {
+	text-decoration: none;
+	color: #d5e803;
+	font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman";
+}
