@@ -1,13 +1,4 @@
 /* CSS Document */
-@font-face {
-  src: url(../fonts/atwriter.ttf);
-  font-family: AnotherTypeWriter; }
-@font-face {
-  src: url(../fonts/ROCK.ttf);
-  font-family: Rockwell; }
-@font-face {
-  src: url(../fonts/Avenir.ttc);
-  font-family: Avenir; }
 body {
   background-image: url(../images/background.png);
   font-family: Avenir, Arial;
@@ -17,55 +8,42 @@ body {
   width: 800px;
   position: relative;
   margin: 0px auto; }
-
-.frontend-training-wrapper h1 {
-  font-size: 24px;
-  border-bottom: solid #000 2px; }
-.frontend-training-wrapper .main-title h1 {
-  font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman";
-  font-size: 36px;
-  color: #f30453;
-  text-align: center;
-  padding: 30px; }
-
-.frontend-training-menu-wrapper {
-  width: 800px;
-  text-align: center;
-  margin: 0px auto 20px auto; }
-
-.frontend-training-menu-wrapper ul {
-  margin: 0px;
-  padding: 0px; }
-
-.frontend-training-menu-wrapper ul li {
-  list-style: none;
-  display: inline-block;
-  text-align: center;
-  margin: 0px 20px;
-  font-size: 16px;
-  padding: 10px 12px; }
-
-.frontend-training-menu-wrapper ul li a {
-  text-decoration: none;
-  color: #d5e803;
-  font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman"; }
-
-.frontend-training-wrapper a {
-  color: #03bbe9;
-  text-decoration: none;
-  -webkit-transition: color 1s;
-  -moz-transition: color 1s; }
-
-.frontend-training-wrapper a:hover {
-  color: #d2e9ef; }
-
-.content-wrapper {
-  margin-top: 50px; }
-
-.content-wrapper .tagStyling {
-  color: #d5e803; }
-
-.content-wrapper .interface img {
-  width: 600px; }
+  .frontend-training-wrapper h1 {
+    font-size: 24px; }
+  .frontend-training-wrapper .main-title h1 {
+    font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman";
+    font-size: 36px;
+    color: #f30453;
+    text-align: center;
+    padding: 30px; }
+  .frontend-training-wrapper a {
+    color: #03bbe9;
+    text-decoration: none;
+    -webkit-transition: color 1s;
+    -moz-transition: color 1s; }
+    .frontend-training-wrapper a:hover {
+      color: #d2e9ef; }
+  .frontend-training-wrapper .frontend-training-menu-wrapper {
+    width: 800px;
+    text-align: center;
+    margin: 0px auto 20px auto; }
+    .frontend-training-wrapper .frontend-training-menu-wrapper ul {
+      margin: 0px;
+      padding: 0px; }
+    .frontend-training-wrapper .frontend-training-menu-wrapper li {
+      list-style: none;
+      display: inline-block;
+      text-align: center;
+      margin: 0px 20px;
+      font-size: 16px;
+      padding: 10px 12px; }
+      .frontend-training-wrapper .frontend-training-menu-wrapper li a {
+        text-decoration: none;
+        color: #d5e803;
+        font-family: 'Special Elite', AnotherTypeWriter, Rockwell, "Times New Roman"; }
+  .frontend-training-wrapper .content-wrapper {
+    margin-top: 50px; }
+    .frontend-training-wrapper .content-wrapper .interface img {
+      width: 600px; }
 
 /*# sourceMappingURL=frontend-training.css.map */

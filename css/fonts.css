@@ -1,0 +1,15 @@
+/* CSS Document */
+@font-face {
+	src: url(../fonts/atwriter.ttf);
+	font-family: AnotherTypeWriter;
+}
+
+@font-face {
+	src: url(../fonts/ROCK.ttf);
+	font-family: Rockwell;
+}
+
+@font-face {
+	src: url(../fonts/Avenir.ttc);
+	font-family: Avenir;
+}
